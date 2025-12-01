@@ -1,32 +1,45 @@
-Fischer Balázs
-YG67QX
-Webprogramozás – PHP beadandó
-Kijelentem, hogy ez a megoldás a saját munkám. Nem másoltam vagy használtam harmadik féltől származó megoldásokat. Nem továbbítottam megoldást hallgatótársaimnak, és nem is tettem közzé. Nem használtam mesterséges intelligencia által generált kódot, kódrészletet. Az ELTE HKR 377/A. § értelmében, ha nem megengedett segédeszközt veszek igénybe, vagy más hallgatónak nem megengedett segítséget nyújtok, a tantárgyat nem teljesíthetem.
+## iKarRental – Project Description
 
-ELTE Hallgatói Követelményrendszer, IK kari különös rész, 377/A. §: "Az a hallgató, aki olyan tanulmányi teljesítménymérés (vizsga, zárthelyi, beadandó feladat) során, amelynek keretében számítógépes program vagy programmodul elkészítése a feladat, az oktató által meghatározottakon kívül más segédeszközt vesz igénybe, illetve más hallgatónak meg nem engedett segítséget nyújt, tanulmányi szabálytalanságot követ el, ezért az adott félévben a tantárgyat nem teljesítheti és a tantárgy kreditjét nem szerezheti meg."
+This project is a PHP-based web application developed for an assignment where the goal was to implement the website for a fictional car rental service. The system allows visitors and registered users to browse available cars, make reservations, and manage their bookings. Administrators can manage cars and view or modify all reservations.
 
-### Minimálisan teljesítendő (enélkül nem fogadjuk el, 6 pont) 
-- [X] 0.0 pont Readme.md fájl: kitöltve, feltöltve 
-- [X] 1.0 pont Főoldal: az összes autó és a hozzájuk tartozó alapadatok kilistázódnak 
-- [X] 1.0 pont Főoldal: az autó kártyájára/nevére kattintva a megfelelő autó aloldalára jutunk 
-- [X] 1.0 pont Autóoldal: Megjelennek az autó adatai és képe 
-- [X] 1.0 pont Főoldal: A főoldalon a feladatban meghatározott elemekre - kivéve a szabad időpontokra - sikeresen tudunk szűrni 
-- [X] 2.0 pont Admin: Új autót tudunk létrehozni hibakezeléssel, és sikeresen menti megfelelő adatok esetén. (Ehhez bejelentkezni nem szükséges) 
+### Core Requirements
 
-### Az alap feladatok (14 pont) 
-- [X] 1.0 pont Hitelesítés: A regisztráció hibakezeléssel működik 
-- [X] 1.0 pont Hitelesítés: A bejelentkezés hibakezeléssel működik 
-- [X] 1.0 pont Hitelesítés: Sikeres bejelentkezés esetén az oldalakon látszódik, hogy be vagyunk jelentkezve 
-- [X] 1.0 pont Kijelentkezés: Profiloldalon és minden oldalon elérhető 
-- [X] 2.0 pont Autóoldal: A kiválasztott autót le tudom foglalni két időpont között, sikeres foglalás esetén a foglalás elmentődik 
-- [X] 1.0 pont Autóoldal: Sikeres és sikertelen foglalás esetén a felhasználó értesítve van, sikeres esetén megjelennek a foglalás és az autó adatai 
-- [X] 1.0 pont Főoldal: A főoldalon tudunk szűrni a szabad időpontokra is 
-- [X] 1.0 pont Profiloldal: Megjelennek a felhasználó korábbi foglalásai 
-- [X] 1.0 pont Admin: Az admin bejelentkezése esetén a profil oldalán megjelenik az összes foglalás, ezek a foglalások törölhetőek 
-- [X] 1.0 pont Admin: Autók adatainak módosítása (hibakezeléssel) 
-- [X] 1.0 pont Admin: Autók törlése 
-- [X] 2.0 pont Megjelenés: Igényes, mobilbarát megjelenés 
+The application needed to support the following functionalities:
 
-### Plusz feladatok (max plusz 5 pont) 
-- [ ] 3.0 pont Autó foglalása: Egy autó esetén eleve csak a szabad időpontokat tudjuk kijelölni foglalás esetén, például egy naptár nézetben vizualizálva vannak a szabad időpontok 
-- [X] 2.0 pont AJAX használata: A foglalás után a mentés és visszajelzés AJAX segítségével történik, nem új oldalra irányít minket, hanem például egy általad készített felugró ablakban (nem alertben!) jelez vissza az oldal frissítése nélkül.
+### Public Features
+- Browsing all available cars on the main list page.
+- Filtering cars by:
+  - availability for a specific date range,
+  - transmission type,
+  - passenger capacity,
+  - daily rental price range.
+- Viewing a dedicated detail page for each car, including all specifications.
+
+### User Authentication
+- User registration with full validation.
+- User login with proper error handling.
+- Logged-in users can see their booking history on a profile page.
+- Logout function accessible from every page.
+
+### Car Reservation
+- Logged-in users can reserve cars for a selected date interval.
+- Successful reservation shows the booking details, the chosen car, and the total price.
+- Failed reservation (overlap with an existing booking) displays an error and allows returning to the main page.
+
+### Administrator Features
+- A separate admin login (default credentials provided).
+- Admins can:
+  - add new cars,
+  - edit car data,
+  - delete cars,
+  - view all reservations on the admin profile page,
+  - delete reservations attached to a car when editing.
+
+### Technical and Design Requirements
+- No PHP frameworks or external backend libraries allowed.
+- Server-side validation required (HTML forms use the `novalidate` attribute).
+- Mobile-friendly, aesthetically clean UI design.
+- Data stored using a Storage class pattern (users, cars, reservations).
+
+### Additional Notes
+The project specification also included detailed UX expectations, suggestions for planning (static HTML prototypes, data structure planning, and form error handling), and a scoring rubric for mandatory, core, and optional extra tasks.
