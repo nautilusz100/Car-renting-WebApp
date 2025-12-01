@@ -1,0 +1,26 @@
+{
+    "9": {
+        "id": "2",
+        "email": "hmm@gmail.com",
+        "start": "2025-01-13",
+        "end": "2025-01-18"
+    },
+    "10": {
+        "id": "7",
+        "email": "admin@ikarrental.hu",
+        "start": "2025-01-14",
+        "end": "2025-01-19"
+    },
+    "11": {
+        "id": "8",
+        "email": "admin@ikarrental.hu",
+        "start": "2025-01-14",
+        "end": "2025-01-19"
+    },
+    "12": {
+        "id": "1",
+        "email": "admin@ikarrental.hu",
+        "start": "2025-01-14",
+        "end": "2025-01-19"
+    }
+}

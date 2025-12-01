@@ -1,0 +1,232 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: black;
+}
+
+header {
+    display: flex;
+    text-align: center;
+    padding: 20px;
+
+}
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.card {
+    background: #2c2c2c;
+    flex: 200px;
+    max-width: 260px;
+    max-height: 260px;
+    border: 1px solid black;
+    border-radius: 8px;
+    text-align: left;
+    padding: 30px;
+}
+
+.card img {
+    max-width: 100%;
+    max-height: 80%;
+    border-radius: 8px;
+    z-index: 1;
+}
+
+.card h3 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.544);
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+
+.logo,.button:visited {
+    color: inherit; 
+}
+
+.card_div {
+    margin-top: 10px;
+    width:100%;
+    padding: 10px
+    
+  }
+.card_div div {
+    display: flex;
+    width:100%;  
+    float:left;
+}
+
+
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+
+}
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+.buttons {
+    text-decoration: none;
+    font-size: 14px;
+    color: white;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.text_search {
+    display: flex;
+    justify-content: space-between; 
+    align-items: flex-start;
+    flex-direction: column;
+}
+.text {
+    font-weight: bold;
+    font-size: 3em;
+    word-wrap: break-word;;
+    color: white;
+    margin-bottom: 0.2em;
+}
+.header_button_div{
+    text-align: left;
+    margin-bottom: 30px;
+    padding: 20px;
+    max-width: 35em;
+    
+}
+
+.search_form
+{
+    margin-right: 2em;
+    color: white;
+    display: flex;
+    align-self: flex-end;
+    flex-direction: column;
+}
+input, select {
+    margin: 0.1em;
+    border: 1px solid #333;
+    border-radius: 8px;
+    background-color:black;
+    padding: 10px;
+    color: white;
+
+}
+#space{
+    width: 35px;
+}
+#arig, #artol{
+    width: 90px;
+}
+.profile_button img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+}
+.yellow_button {
+    padding: 10px;
+    background-color: #FFCC00;
+    border-radius: 15px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+    margin-left: -20px;
+}
+
+.edit_button {
+    padding: 10px;
+    background-color: #505f84;
+    border-radius: 15px;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    margin-left: 10px;
+}
+.delete_button {
+    padding: 10px;
+    background-color: rgb(186, 1, 1);
+    border-radius: 15px;
+    font-size: 14px;
+    font-weight: bold;
+    color: black;
+    margin-left: 10px;
+}
+.yellow_button_alap
+{
+    padding: 10px;
+    background-color: #FFCC00;
+    border-radius: 15px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+}
+.centerit
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.yellow_button_create
+{
+    padding: 10px;
+    background-color: #FFCC00;
+    border-radius: 15px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+
+}
+.yellow_button,.yellow_button_create:visited {
+    color: #333;
+}
+.edit_button:visited {
+    color: white;
+}
+.delete_button:visited {
+    color:  black;
+}
+#block{
+    display: block;
+}
+#ar{
+    color: white;
+    font-size: 30px;
+    margin-top: -2em;
+    z-index: 2;
+
+}
+#brand_text{
+    display: inline;
+    color: white;
+    font-size: 20px;
+}
+#model_text{
+    display: inline;
+    color: white;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+

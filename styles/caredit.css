@@ -1,0 +1,153 @@
+
+.yellow_button {
+    padding: 10px;
+    background-color: #FFCC00;
+    border-radius: 15px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+}
+.yellow_button2 {
+    padding: 10px;
+    background-color: #FFCC00;
+    border-radius: 15px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+    width: 95%;
+}
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+.buttons {
+    text-decoration: none;
+    font-size: 14px;
+    color: white;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: black;
+    color: white;
+}
+.form_div_reg{
+    margin: 5em;
+    margin-top: 2em;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #333;
+    color: white;
+    border-radius: 15px;
+
+}
+#belepes{
+    font-size: 2.3em;
+    margin: 5px;
+    word-wrap: break-word;
+    
+}
+input, select {
+    margin: 5px;
+    border: 1px solid #333;
+    border-radius: 8px;
+    background-color:white;
+    padding: 10px;
+    color: black;
+
+}
+#passw, #email, #full_name, #passwagain{
+    width: 600px;
+}
+.labels_form
+{
+    font-size: 20px;
+}
+
+.error{
+    font-size: 0.5em;
+    color: red;
+}
+
+.profile_button img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.imgdiv
+{
+    max-width: 45%;
+    max-height: 45%;
+}
+.information img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 8px;
+}
+#image
+{
+    width: 80%;
+}
+
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+.card {
+    background: #2c2c2c;
+    max-width: 240px;
+    border: 1px solid black;
+    border-radius: 8px;
+    text-align: left;
+    padding: 20px;
+}
+
+.card img {
+    max-width: 100%;
+    max-height: 80%;
+    border-radius: 8px;
+}
+
+.card a {
+    margin: 10px;
+    font-size: 18px;
+    color: white;
+}
+.delete_button {
+    padding: 10px;
+    background-color: rgb(186, 1, 1);
+    border-radius: 15px;
+    font-size: 14px;
+    font-weight: bold;
+    color: black;
+    margin-left: 10px;
+}
+.delete_button:visited {
+    color:  black;
+}

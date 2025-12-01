@@ -1,0 +1,85 @@
+
+.yellow_button {
+    padding: 10px;
+    background-color: #FFCC00;
+    border-radius: 15px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+}
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+
+}
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+.buttons {
+    text-decoration: none;
+    font-size: 14px;
+    color: white;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: black;
+    color: white;
+}
+.form_div_reg{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #333;
+    margin: 2%;
+    border-radius: 15px;
+}
+#belepes{
+    font-size: 50px;
+
+    
+}
+input, select {
+    margin: 5px;
+    border: 1px solid #333;
+    border-radius: 8px;
+    background-color:white;
+    padding: 10px;
+    color: black;
+
+}
+#passw, #email, #full_name, #passwagain{
+    width: 22em;
+}
+.labels_form
+{
+    font-size: 14px;
+}
+
+.error{
+    font-size: 0.5em;
+    color: red;
+}
+
+.profile_button img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
