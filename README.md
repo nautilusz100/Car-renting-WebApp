@@ -37,9 +37,4 @@ The application needed to support the following functionalities:
 
 ### Technical and Design Requirements
 - No PHP frameworks or external backend libraries allowed.
-- Server-side validation required (HTML forms use the `novalidate` attribute).
 - Mobile-friendly, aesthetically clean UI design.
-- Data stored using a Storage class pattern (users, cars, reservations).
-
-### Additional Notes
-The project specification also included detailed UX expectations, suggestions for planning (static HTML prototypes, data structure planning, and form error handling), and a scoring rubric for mandatory, core, and optional extra tasks.
